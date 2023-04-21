@@ -43,4 +43,14 @@ public class JUnitTests {
         //THEN
         assertTrue(password,actual);
     }
+    @Test
+    void shouldReturn_true_ifPassIsWithLessOneNumber(){
+        //GIVEN
+        String password = "Password12@";
+        //String password = "Password@";
+        //WHEN
+        boolean actual = Main.isValidatedPass(password);
+        //THEN
+        assertTrue(password,actual);
+    }
 }
